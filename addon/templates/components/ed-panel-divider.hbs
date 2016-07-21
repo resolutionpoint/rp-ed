@@ -1,0 +1,35 @@
+{{#ed-form-field label="Цвет блока"}}
+    {{ed-color-picker color=edState.editComponent.bgColor}}
+{{/ed-form-field}}
+
+
+{{#ed-form-field label="Цвет"}}
+    {{ed-color-picker color=lineColor}}
+{{/ed-form-field}}
+
+{{#ed-form-field label="Ширина"}}
+    {{ed-step-number value=lineWidth step=5 min=5 max=100 title="Ширина"}}
+{{/ed-form-field}}
+
+{{#ed-form-field label="Толщина"}}
+    {{ed-step-number value=lineThickness min=1 title="Толщина"}}
+{{/ed-form-field}}
+
+{{#ed-form-field label="Стиль"}}
+    {{ed-combobox selection=lineStyle
+        options=styles
+        title="Стиль"
+        placeholder="Стиль"
+    }}
+{{/ed-form-field}}
+
+{{ed-panel-align align=align}}
+
+{{#ed-form-field label="Отступы"}}
+    {{ed-padding-box paddingTop=paddingTop
+        paddingRight=paddingRight
+        paddingBottom=paddingBottom
+        paddingLeft=paddingLeft
+        paddingStep=5
+    }}
+{{/ed-form-field}}

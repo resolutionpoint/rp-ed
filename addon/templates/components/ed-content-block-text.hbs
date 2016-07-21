@@ -1,0 +1,9 @@
+{{#ed-content-block-wrapper isEdit=isEdit domElement=domElement edState=edState}}
+    {{#if isTextEmpty}}
+        <!-- hack should be fixed -->
+        <div style="display:none">{{{currentElement.html}}}</div>
+        {{{emptyText.html}}}
+    {{else}}
+        {{{currentElement.html}}}
+    {{/if}}
+{{/ed-content-block-wrapper}}

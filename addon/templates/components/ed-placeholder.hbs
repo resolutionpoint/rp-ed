@@ -1,0 +1,28 @@
+{{#if isShowFrameBlockPanel}}
+	<div class="frame-panel-buttons">
+		<i class="ed-fa ed-fa-move" {{action "moveFrameBlock" on="mouseDown"}}></i>
+		<i class="ed-fa ed-fa-trash" {{action "removeFrameBlock"}}></i>
+	</div>
+{{/if}}
+
+{{#ed-insert-placeholder domElement=domElement edState=edState canShowPlaceholder=canShowPlaceholder}}
+	<div class="{{if isShowHighlight 'ed-block-highlight'}}">
+		<table class="ed-placeholder {{if temp 'temp'}} {{if active 'active'}} {{if error 'error'}}" width="100%"><tbody><tr><td>
+			<div class="ed-placeholder-text">
+				{{#if active}}
+					{{#if error}}
+						Этот блок не может быть здесь
+					{{else}}
+						Отпустите мышь и блок будет вставлен
+					{{/if}}
+				{{else}}
+					{{#if temp}}
+						Вставить выше/ниже контент блока
+					{{else}}
+						Место для контент блока
+					{{/if}}
+				{{/if}}
+			</div>
+		</td></tr></tbody></table>
+	</div>
+{{/ed-insert-placeholder}}

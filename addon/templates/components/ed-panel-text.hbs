@@ -1,0 +1,14 @@
+{{#ed-form-field label="Цвет блока"}}
+    {{ed-color-picker color=edState.editComponent.bgColor}}
+{{/ed-form-field}}
+
+{{#ed-form-field label="Отступы"}}
+    {{ed-padding-box paddingTop=paddingTop
+        paddingRight=paddingRight
+        paddingBottom=paddingBottom
+        paddingLeft=paddingLeft
+        paddingStep=5
+    }}
+{{/ed-form-field}}
+
+{{ed-html-editor html=text on-change="onChange"}}

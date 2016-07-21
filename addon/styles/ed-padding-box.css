@@ -1,0 +1,13 @@
+.ed-padding-box {
+    display: inline-block;
+}
+
+.ed-padding-box__padding-top,
+.ed-padding-box__padding-bottom {
+    text-align: center;
+}
+
+.ed-padding-box__divider {
+    display:inline-block;
+    width:20px;
+}

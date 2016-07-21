@@ -1,0 +1,17 @@
+{{#if isInsertBefore}}
+    {{ed-temp-placeholder-insert-before domElement=domElement
+        edState=edState
+        inserted="inserted"
+    }}
+{{/if}}
+
+<div class="ed-center-block">
+    {{yield}}
+</div>
+
+{{#if isInsertAfter}}
+    {{ed-temp-placeholder-insert-after domElement=domElement
+        edState=edState
+        inserted="inserted"
+    }}
+{{/if}}

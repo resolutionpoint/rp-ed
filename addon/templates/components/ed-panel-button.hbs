@@ -1,0 +1,32 @@
+{{#ed-form-field label="Цвет блока"}}
+    {{ed-color-picker color=edState.editComponent.bgColor}}
+{{/ed-form-field}}
+
+{{ed-panel-link-tag link=buttonLink}}
+
+{{#ed-form-field label="Цвет кнопки"}}
+    {{ed-color-picker color=buttonColor}}
+{{/ed-form-field}}
+
+
+{{#ed-form-field label="Отступы"}}
+    {{ed-padding-box paddingTop=paddingTop
+        paddingRight=paddingRight
+        paddingBottom=paddingBottom
+        paddingLeft=paddingLeft
+        paddingStep=5
+    }}
+{{/ed-form-field}}
+
+
+{{#ed-form-field label="Радиус рамки"}}
+    {{ed-step-number value=buttonBorderRadius min=0}}
+{{/ed-form-field}}
+
+{{ed-panel-align align=align}}
+
+{{#ed-form-field label="Ширина"}}
+    {{ed-step-number value=buttonWidth step=5 min=5 max=100 title="Ширина"}}
+{{/ed-form-field}}
+
+{{ed-html-editor type="button-text" html=buttonText on-change="onChange"}}

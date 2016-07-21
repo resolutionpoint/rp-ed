@@ -1,0 +1,67 @@
+.ed-panel {
+    margin: 0 10px;
+    width: 410px;
+    height: 100%;
+    float: right;
+}
+
+.ed-panel-block-wrapper {
+    margin: 9px;
+    font-weight: 600;
+    font-size: 13px;
+    width: 114px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    border: none !important;
+    text-align: center;
+    display: inline-block;
+}
+
+.ed-panel-block-wrapper .ed-panel-block {
+    width: 114px;
+    padding-top: 90px;
+    background: #FFF url('ember-cli-email-designer/assets/img/blocks_sprite.png') no-repeat center 114px;
+    background-size: 114px;
+    border-radius: 6px;
+    border: 1px solid #D0D0D0;
+    -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.18);
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.18);
+}
+
+.ed-panel-block-wrapper .ed-panel-block[data-type="text"] {
+    background-position: center -124px;
+}
+
+.ed-panel-block-wrapper .ed-panel-block[data-type="image"] {
+    background-position: center -466px;
+}
+
+.ed-panel-block-wrapper .ed-panel-block[data-type="divider"] {
+    background-position: center -352px;
+}
+
+.ed-panel-block-wrapper .ed-panel-block[data-type="social"] {
+    background-position: center -1032px;
+}
+
+.ed-panel-block-wrapper .ed-panel-block[data-type="button"],
+.ed-panel-block-wrapper .ed-panel-block[data-type="unsubscribe-button"]  {
+    background-position: center -1149px;
+}
+
+.ed-panel-block-wrapper .ed-panel-block[data-type="columns2"] {
+    background-position: center -1480px;
+}
+
+.ed-panel-block-wrapper .ed-panel-block[data-type="columns3"] {
+    background-position: center -1947px;
+}
+
+.ed-panel-block-wrapper .ed-panel-block[data-type="reasons"] {
+    background-position: center -2052px;
+}
+
+.email-designer .ed-panel .customCheckbox {
+    padding-bottom: 10px;
+}
+

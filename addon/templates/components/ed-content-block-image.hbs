@@ -1,0 +1,17 @@
+{{#ed-content-block-wrapper isEdit=isEdit domElement=domElement edState=edState}}
+    {{#if imageSrc}}
+        {{#if isEdit}}
+            {{ed-dom-element domElement=edState.editElement edState=edState}}
+        {{else}}
+            {{ed-dom-element domElement=domElement edState=edState}}
+        {{/if}}
+    {{else}}
+        <div style={{emptyImageBackgroundColor}}>
+            <div style="text-align:center">
+                <div style="padding: 10px;">
+                    <img src="assets/ember-cli-email-designer/assets/img/email-designer/empty-image.png"/>
+                </div>
+            </div>
+        </div>
+    {{/if}}
+{{/ed-content-block-wrapper}}

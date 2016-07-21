@@ -1,0 +1,15 @@
+{{#if isDesignMode}}
+    {{#ed-button action=(action "callAction" "switchToEditorMode") title="Открыть HTML-редактор"}}
+        HTML-редактор
+    {{/ed-button}}
+{{else}}
+    {{#ed-button action=(action "callAction" "switchToDesignerMode") title="Открыть визуальный редактор"}}
+        Визуальный редактор
+    {{/ed-button}}
+{{/if}}
+
+{{#unless isDesignMode}}
+    {{#ed-button action=(action "callAction" "format") title="Переформатировать HTML"}}
+        Переформатировать
+    {{/ed-button}}
+{{/unless}}

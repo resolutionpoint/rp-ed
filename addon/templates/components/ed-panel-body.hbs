@@ -1,0 +1,33 @@
+{{#ed-form-field label="Цвет фона"}}
+    {{ed-color-picker value=edState.backgroundComponent.bgColor}}
+{{/ed-form-field}}
+
+{{#ed-form-field label="Ширина"}}
+    {{ed-step-number value=edState.bodyComponent.bodyWidth
+        step=5
+        min=500
+        max=900
+        title="Ширина"
+    }}
+{{/ed-form-field}}
+
+{{#ed-form-field label="Цвет тела"}}
+    {{ed-color-picker value=edState.bodyComponent.bgColor}}
+{{/ed-form-field}}
+
+{{#ed-form-field label="Шрифт"}}
+    {{ed-combobox selection=selectedFont
+        options=fonts
+        title="Шрифт"
+        placeholder="Шрифт"
+    }}
+{{/ed-form-field}}
+
+{{#ed-form-field label="Отступы"}}
+    {{ed-padding-box paddingTop=paddingTop
+        paddingRight=paddingRight
+        paddingBottom=paddingBottom
+        paddingLeft=paddingLeft
+        paddingStep=5
+    }}
+{{/ed-form-field}}

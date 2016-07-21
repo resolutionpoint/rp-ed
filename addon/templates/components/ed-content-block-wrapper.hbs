@@ -1,0 +1,14 @@
+{{#if isShowContentBlockPanel}}
+    <div class="content-panel-buttons">
+        <i class="ed-fa ed-fa-pencil" {{action "editContentBlock"}}></i>
+        <i class="ed-fa ed-fa-move"   {{action "moveContentBlock" on="mouseDown"}}></i>
+        <i class="ed-fa ed-fa-docs"   {{action "cloneContentBlock"}}></i>
+        <i class="ed-fa ed-fa-trash"  {{action "removeContentBlock"}}></i>
+    </div>
+{{/if}}
+
+{{#ed-insert-placeholder domElement=domElement edState=edState canShowPlaceholder=canShowPlaceholder inserted="inserted"}}
+    <div class="{{if isElementMoving 'ed-half-opacity'}} {{if isShowHighlight 'ed-block-highlight'}}">
+        {{yield}}
+    </div>
+{{/ed-insert-placeholder}}

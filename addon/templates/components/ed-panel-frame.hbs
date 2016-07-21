@@ -1,0 +1,9 @@
+{{#ed-form-field label="Цвет блока"}}
+    {{ed-color-picker color=edState.editComponent.bgColor}}
+{{/ed-form-field}}
+
+{{#each columns as |column|}}
+    {{#ed-form-field label=""}}
+        {{input value=column.attributes.width}}
+    {{/ed-form-field}}
+{{/each}}

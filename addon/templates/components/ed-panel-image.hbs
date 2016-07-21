@@ -1,0 +1,45 @@
+{{#ed-form-field label="Цвет блока"}}
+    {{ed-color-picker color=edState.editComponent.bgColor}}
+{{/ed-form-field}}
+
+{{#ed-form-field label="Адрес изображения"}}
+    {{input value=imageSrc}}
+
+    {{!-- TODO: use any gallery --}}
+    {{!-- {{image-gallery selectedImage=imageSrc selectedImageDesc=selectedImageDesc}} --}}
+{{/ed-form-field}}
+
+{{#ed-form-field label="Подпись"}}
+    {{input value=imageAlt}}
+{{/ed-form-field}}
+
+{{ed-panel-link-tag link=imageLink}}
+
+{{#ed-form-field label="Отступы"}}
+    {{ed-padding-box paddingTop=paddingTop
+        paddingRight=paddingRight
+        paddingBottom=paddingBottom
+        paddingLeft=paddingLeft
+        paddingStep=5
+    }}
+{{/ed-form-field}}
+
+{{#ed-form-field label="По ширине"}}
+    {{input checked=isFullWidth type="checkbox"}}
+{{/ed-form-field}}
+
+{{#unless isFullWidth}}
+    {{ed-panel-align align=align}}
+
+    {{#ed-form-field label="Ширина"}}
+        {{ed-step-number value=imageWidth
+            title="Ширина"
+        }}
+    {{/ed-form-field}}
+
+    {{#ed-form-field label="Высота"}}
+        {{ed-step-number value=imageHeight
+            title="Высота"
+        }}
+    {{/ed-form-field}}
+{{/unless}}

@@ -1,0 +1,48 @@
+{{#if isEdit}}
+    <div class="ed-panel-buttons">
+        {{ed-button action=(action "save") content="Сохранить"}}
+        {{ed-button action=(action "cancel") content="Отмена"}}
+    </div>
+{{/if}}
+
+{{#if isEdit}}
+    {{#ed-adopt-height paddingTop=135 paddingBottom=80}}
+        {{#if panelComponentName}}
+            {{component panelComponentName
+                domElement=edState.editElement
+                edState=edState
+            }}
+        {{/if}}
+    {{/ed-adopt-height}}
+{{else}}
+    <div>
+        {{ed-button disabled=isBody
+            action=(action "setMode" "body")
+            content="Тело"
+        }}
+        {{ed-button disabled=isBlocks
+            action=(action "setMode" "blocks")
+            content="Блоки"
+        }}
+    </div>
+
+    {{#ed-adopt-height paddingTop=140 paddingBottom=80}}
+        {{#if isBlocks}}
+            <div class="panel">
+                {{#each blocks as |block|}}
+                    <div class="ed-panel-block-wrapper" {{action "dragBlock" block.klass on="mouseDown"}}>
+                        <div class="ed-panel-block" data-type="{{block.type}}">
+                            {{block.label}}
+                        </div>
+                    </div>
+                {{/each}}
+            </div>
+        {{/if}}
+
+        {{#if isBody}}
+            {{ed-panel-body
+                edState=edState
+            }}
+        {{/if}}
+    {{/ed-adopt-height}}
+{{/if}}

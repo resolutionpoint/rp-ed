@@ -1,0 +1,171 @@
+.ed-buttons-panel {
+    margin: 5px;
+}
+
+.ed-edit-container {
+    height: auto;
+    overflow: hidden;
+}
+
+.ed-edit-design {
+    float: none;
+    width: auto;
+    overflow: hidden;
+}
+
+.content-panel-buttons {
+    position: absolute;
+    top: 0.5em;
+    right: 0;
+    z-index: 5;
+}
+
+.content-panel-buttons i {
+    background-color: #3b91ce;
+    color: white;
+    border-radius: 0.15em;
+    padding: 0.15em;
+    margin: 0.15em;
+    opacity: 0.7;
+}
+
+.frame-panel-buttons {
+    position: absolute;
+    top: -2.7em;
+    left: 0em;
+    z-index: 5;
+    padding: 1em 0.5em;
+}
+
+.frame-panel-buttons i {
+    background-color: #3b91ce;
+    color: white;
+    border-radius: 0.15em;
+    padding: 0.15em;
+    margin: 0.15em;
+    opacity: 0.7;
+}
+
+.ed-block-focus {
+    position: relative;
+}
+
+.ed-block-highlight {
+    outline: rgba(59, 145, 206, 0.7) solid 5px;
+}
+
+.ed-half-opacity {
+    opacity: 0.5;
+}
+
+.frame-block-highlight {
+    outline: rgba(59, 145, 206, 0.7) solid 5px;
+    position: relative;
+}
+
+.ed-placeholder .ed-placeholder-text {
+    background: #F5F5F5;
+    border: 2px dashed #E0E0E0;
+    color: #606060;
+    padding: 10px;
+    font-weight: 2em;
+}
+
+.ed-placeholder.active .ed-placeholder-text,
+.ed-placeholder.active.temp .ed-placeholder-text {
+    background: #E0FFE0;
+    border: 2px dashed #33F533;
+    color: #33F533;
+}
+
+.ed-placeholder.temp .ed-placeholder-text {
+    background: #FFFFE0;
+    border: 2px dashed #F5D033;
+    color: #F5D033;
+}
+
+.ed-placeholder.error .ed-placeholder-text {
+    background: #F0D0D0;
+    border: 2px dashed #F06060;
+    color: #F06060;
+}
+
+.stopselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* test */
+.email-designer {
+    width: 100%;
+    border: 1px solid #9E9E9E;
+}
+
+.email-designer .edit-body {
+    color: black;
+}
+
+.email-designer .edit-body .li {
+    list-style: disc;
+}
+
+/* stop stupid css rules */
+
+.email-designer td {
+    padding: 0;
+    margin: 0;
+}
+
+.ed-resizer {
+    position: relative;
+    width: 100%;
+}
+
+.ed-resizer div {
+    margin-left: -0.8em;
+}
+
+.ed-resizer i {
+    background-color: #3b91ce;
+    color: white;
+    border-radius: 0.15em;
+    padding: 0.15em;
+    margin: 0.15em;
+    opacity: 0.7;
+}
+
+.ed-reset-style {
+    font-family: "Times New Roman", Times, serif;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    line-height: normal;
+}
+
+.ed-reset-style p {
+    margin: 16px 0;
+}
+
+.ed-reset-style ol, .ed-reset-style ul {
+    margin: 16px 0;
+    padding-left: 40px;
+    list-style-type: decimal;
+}
+
+.ed-reset-style ol li {
+    list-style-type: decimal;
+}
+
+.ed-reset-style ul li {
+    list-style-type: disc;
+}
+
+.ed-body {
+    margin: 1em;
+}
+
+.ed-adopt-height {
+    overflow: auto;
+}

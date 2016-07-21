@@ -1,0 +1,20 @@
+{{#if isInDom}}
+    {{#if isTrySwitchToDesignMode}}
+        Пытаюсь отобразить шаблон в визуальном редакторе...
+    {{else}}
+        {{ed-toolbar isDesignMode=isDesignMode
+            edState=edState
+            body=body
+            callAction=(action "callAction")
+        }}
+
+        {{#if isDesignMode}}
+            {{ed-visual domElement=domElement edState=edState blocks=blocks}}
+        {{else}}
+            {{ed-code-mirror value=_body
+                rows="40"
+                register-as=codemirror
+            }}
+        {{/if}}
+    {{/if}}
+{{/if}}

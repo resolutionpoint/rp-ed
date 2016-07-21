@@ -1,0 +1,14 @@
+{{#each children as |childDomElement|}}
+    {{#if childDomElement.isText}}
+        {{childDomElement.data}}
+    {{else}}
+        {{#if childDomElement.isBrTag}}
+            <br>
+        {{else}}
+            {{component childDomElement.componentName
+                domElement=childDomElement
+                edState=edState
+            }}
+        {{/if}}
+    {{/if}}
+{{/each}}

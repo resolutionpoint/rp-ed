@@ -1,0 +1,7 @@
+{{#ed-content-block-wrapper isEdit=isEdit domElement=domElement edState=edState}}
+    {{#if isEdit}}
+        {{ed-dom-element domElement=edState.editElement edState=edState}}
+    {{else}}
+        {{ed-dom-element domElement=domElement edState=edState}}
+    {{/if}}
+{{/ed-content-block-wrapper}}

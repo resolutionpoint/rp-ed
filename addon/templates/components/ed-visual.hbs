@@ -1,0 +1,21 @@
+<div class="ed-edit-container">
+    {{ed-panel edState=edState blocks=blocks}}
+
+    <div class="ed-edit-design ed-reset-style">
+        {{#ed-adopt-height paddingTop=80 paddingBottom=80}}
+            {{#with domElements as |children|}}
+                {{partial "pickcomponent"}}
+            {{/with}}
+        {{/ed-adopt-height}}
+    </div>
+</div>
+
+{{#if edState.isModeDrag}}
+    {{#ed-drag-block x=moveX y=moveY}}
+        <div class="ed-reset-style">
+            {{#with moveElements as |children|}}
+                {{partial "pickcomponent"}}
+            {{/with}}
+        </div>
+    {{/ed-drag-block}}
+{{/if}}

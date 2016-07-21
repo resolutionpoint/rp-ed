@@ -1,0 +1,36 @@
+{{!-- TODO: implement combobox
+    {{input-for 'linkType' as="combobox"
+    selectionId=linkTypeId
+    options=linkTypes
+    label="Тип ссылки"
+    title="Тип ссылки"
+    placeholder="Тип ссылки"
+}} --}}
+
+{{#if isLink}}
+    {{#ed-form-field label="Адрес ссылки"}}
+        {{input value=href
+            placeholder="Адрес ссылки"
+            title="Адрес ссылки"
+        }}
+    {{/ed-form-field}}
+
+    {{#ed-form-field label="Псевдоним"}}
+        {{input value=tag
+            placeholder="Псевдоним"
+            title="Псевдоним"
+        }}
+    {{/ed-form-field}}
+{{/if}}
+
+{{#if isSurvey}}
+
+{{!-- TODO: implement combobox
+    {{input-for 'survey' as="combobox"
+        selectionId=surveyId
+        options=stores.activeSurveys
+        label="Опрос"
+        placeholder="Опрос"
+        title="Опрос"
+    }} --}}
+{{/if}}

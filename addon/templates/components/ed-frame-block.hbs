@@ -1,0 +1,25 @@
+{{#if isShowFrameBlockPanel}}
+	<div class="frame-panel-buttons">
+		<i class="ed-fa ed-fa-cog" {{action "editFrameBlock"}}></i>
+		<i class="ed-fa ed-fa-move" {{action "moveFrameBlock" on="mouseDown"}}></i>
+		<i class="ed-fa ed-fa-docs" {{action "cloneFrameBlock"}}></i>
+		<i class="ed-fa ed-fa-trash" {{action "removeFrameBlock"}}></i>
+	</div>
+{{/if}}
+
+{{#ed-insert-placeholder domElement=domElement edState=edState inserted="inserted"}}
+	<div style={{styleCenterBlock}} class="{{if isShowHighlight 'ed-block-highlight'}}">
+		{{#if isEdit}}
+			<div class="ed-resizer">
+				{{#each columnPairs as |columnPair|}}
+					<div style={{columnPair.style}}>
+						<i class="ed-fa ed-fa-resize-horizontal" {{action "resizeColumn" columnPair on="mouseDown"}}></i>
+					</div>
+				{{/each}}
+			</div>
+			{{ed-dom-element domElement=edState.editElement edState=edState}}
+		{{else}}
+			{{ed-dom-element domElement=domElement edState=edState}}
+		{{/if}}
+	</div>
+{{/ed-insert-placeholder}}

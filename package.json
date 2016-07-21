@@ -1,0 +1,110 @@
+{
+  "_args": [
+    [
+      "rp-ed@0.0.13",
+      "D:\\projects\\HappyC\\admin"
+    ]
+  ],
+  "_from": "rp-ed@0.0.13",
+  "_id": "rp-ed@0.0.13",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/rp-ed",
+  "_nodeVersion": "0.12.13",
+  "_npmOperationalInternal": {
+    "host": "packages-16-east.internal.npmjs.com",
+    "tmp": "tmp/rp-ed-0.0.13.tgz_1468398105971_0.9824604645837098"
+  },
+  "_npmUser": {
+    "email": "ipavelpetrov@ya.ru",
+    "name": "ipavelpetrov"
+  },
+  "_npmVersion": "3.9.3",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "rp-ed",
+    "raw": "rp-ed@0.0.13",
+    "rawSpec": "0.0.13",
+    "scope": null,
+    "spec": "0.0.13",
+    "type": "version"
+  },
+  "_requiredBy": [
+    "#DEV:/"
+  ],
+  "_resolved": "https://registry.npmjs.org/rp-ed/-/rp-ed-0.0.13.tgz",
+  "_shasum": "d4aad80218b69e0474c2188ca3d6c56f41e58d1c",
+  "_shrinkwrap": null,
+  "_spec": "rp-ed@0.0.13",
+  "_where": "D:\\projects\\HappyC\\admin",
+  "author": {
+    "email": "ipavelpetrov@ya.ru",
+    "name": "Pavel Petrov"
+  },
+  "dependencies": {
+    "broccoli-funnel": "~1.0.1",
+    "broccoli-merge-trees": "~1.1.1",
+    "ember-cli-babel": "^5.1.6",
+    "ember-cli-htmlbars": "^1.0.3",
+    "ember-colpick": "~0.6.2"
+  },
+  "description": "rp-ed",
+  "devDependencies": {
+    "broccoli-asset-rev": "^2.4.2",
+    "ember-ajax": "0.7.1",
+    "ember-cli": "2.5.0",
+    "ember-cli-app-version": "^1.0.0",
+    "ember-cli-dependency-checker": "^1.2.0",
+    "ember-cli-htmlbars": "^1.0.3",
+    "ember-cli-htmlbars-inline-precompile": "^0.3.1",
+    "ember-cli-inject-live-reload": "^1.4.0",
+    "ember-cli-jshint": "^1.0.0",
+    "ember-cli-qunit": "^1.4.0",
+    "ember-cli-release": "0.2.8",
+    "ember-cli-sri": "^2.1.0",
+    "ember-cli-uglify": "^1.2.0",
+    "ember-data": "^2.5.0",
+    "ember-disable-prototype-extensions": "^1.1.0",
+    "ember-export-application-global": "^1.0.5",
+    "ember-load-initializers": "^0.5.1",
+    "ember-resolver": "^2.0.3",
+    "ember-try": "^0.2.2",
+    "emberx-select": "2.1.2",
+    "loader.js": "^4.0.1"
+  },
+  "directories": {
+    "doc": "doc",
+    "test": "tests"
+  },
+  "dist": {
+    "shasum": "d4aad80218b69e0474c2188ca3d6c56f41e58d1c",
+    "tarball": "https://registry.npmjs.org/rp-ed/-/rp-ed-0.0.13.tgz"
+  },
+  "ember-addon": {
+    "configPath": "tests/dummy/config"
+  },
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "gitHead": "424a8148f60986a6cfda767c0931d4bf26571144",
+  "keywords": [
+    "ember-addon"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "email": "ipavelpetrov@ya.ru",
+      "name": "ipavelpetrov"
+    }
+  ],
+  "name": "rp-ed",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": "",
+  "scripts": {
+    "build": "ember build",
+    "start": "ember server",
+    "test": "ember try:testall"
+  },
+  "version": "0.0.13"
+}

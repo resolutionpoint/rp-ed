@@ -1,0 +1,57 @@
+{{#ed-form-field label="Цвет блока"}}
+	{{ed-color-picker color=edState.editComponent.bgColor}}
+{{/ed-form-field}}
+
+{{#ed-form-field label="ВКонтакте"}}
+    {{input type="checkbox" checked=vkChecked}}
+{{/ed-form-field}}
+
+{{#if vkChecked}}
+    {{input value=vkLink}}
+
+    {{#ed-form-field label="Псевдоним"}}
+        {{input value=vkLinkTag
+            title="Псевдоним"
+            placeholder="Псевдоним"
+        }}
+    {{/ed-form-field}}
+{{/if}}
+
+{{#ed-form-field label="Одноклассники"}}
+    {{input type="checkbox" checked=okChecked}}
+{{/ed-form-field}}
+
+{{#if okChecked}}
+    {{input value=okLink}}
+
+    {{#ed-form-field label="Псевдоним"}}
+        {{input value=okLinkTag
+            title="Псевдоним"
+            placeholder="Псевдоним"
+        }}
+    {{/ed-form-field}}
+{{/if}}
+
+{{#ed-form-field label="Facebook"}}
+    {{input type="checkbox" checked=fbChecked}}
+{{/ed-form-field}}
+
+{{#if fbChecked}}
+    {{input value=fbLink}}
+
+    {{#ed-form-field label="Псевдоним"}}
+        {{input value=fbLinkTag
+            title="Псевдоним"
+            placeholder="Псевдоним"
+        }}
+    {{/ed-form-field}}
+{{/if}}
+
+{{#ed-form-field label="Отступы"}}
+    {{ed-padding-box paddingTop=paddingTop
+        paddingRight=paddingRight
+        paddingBottom=paddingBottom
+        paddingLeft=paddingLeft
+        paddingStep=5
+    }}
+{{/ed-form-field}}
